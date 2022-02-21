@@ -1,0 +1,96 @@
+body {
+    background: url(./assets/brain.jpg);
+    background-size: 30% auto;
+    background-position: center;
+    color: #fff;
+    height: 100vh;
+}
+
+#content {
+    text-align: center;
+    margin-top: 5%;
+    padding: 10px;
+    text-shadow: 0 4px 3px #007bff, 0 8px 13px #007bff, 0 8px 14px #007bff;
+    background-color: #ffffffbf;
+    opacity: 0.9;
+    color: blue;
+}
+
+.row {
+    margin: auto 0;
+}
+
+html {
+    height: 100%;
+}
+
+.card-content {
+    height: 120px;
+    font-size: 85px;
+    position: absolute;
+}
+
+.card-image {
+    height: 120px;
+    width: 100%;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 85px;
+    color: #fff;
+}
+
+.cart-flip {
+    perspective: 1000px;
+}
+
+.flip {
+    transform: rotateY(180deg);
+}
+
+.card-flip,
+.font,
+.back {
+    width: 100%;
+    height: 130px;
+    border: red 1px dashed;
+}
+
+.flip {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.font,
+.back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.font {
+    z-index: 2;
+    transform: rotateY(0deg);
+}
+
+.back {
+    transform: rotateY(180deg);
+}
+
+::ng-deep div#content {
+    background-color: #fff;
+    opacity: 1;
+}
+
+.progress {
+    margin-bottom: 10px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+}
